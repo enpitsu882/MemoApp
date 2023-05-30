@@ -1,4 +1,4 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
+import React from 'react';
 import { bool, shape, string } from 'prop-types';
 import { StyleSheet, View, Text } from 'react-native';
 
