@@ -4,6 +4,7 @@ import { createStackNavigator, CardStyleInterpolators } from '@react-navigation/
 // eslint-disable-next-line import/no-extraneous-dependencies
 import firebase from 'firebase';
 
+import { LogBox } from 'react-native';
 import MemoDeatilScreen from './src/screens/MemoDetailScreen';
 import MemoListScreen from './src/screens/MemoListScreen';
 import MemoEditScreen from './src/screens/MemoEditScreen';
@@ -11,6 +12,9 @@ import MemoCreateScreen from './src/screens/MemoCreateScreen';
 import LogInScreen from './src/screens/LogInScreen';
 import SignUpScreen from './src/screens/SignUpScreen';
 import { firebaseConfig } from './env';
+
+// Ignore log notification by message
+LogBox.ignoreLogs(['AsyncStorage has been extracted']);
 
 const Stack = createStackNavigator();
 
@@ -22,7 +26,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="SignUp"
+        initialRouteName="LogIn"
         screenOptions={{
           headerStyle: { backgroundColor: '#467FD3' },
           headerTitleStyle: { color: '#FFFFFF' },
