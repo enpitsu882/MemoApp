@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import {
   View, Text, StyleSheet, TextInput, TouchableOpacity, Alert,
 } from 'react-native';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import firebase from 'firebase';
 
 import Button from '../components/Button';
