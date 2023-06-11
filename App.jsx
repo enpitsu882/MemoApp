@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator, CardStyleInterpolators } from '@react-navigation/stack';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import firebase from 'firebase';
 
 import { LogBox } from 'react-native';
