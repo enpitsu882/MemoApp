@@ -2,8 +2,8 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator, CardStyleInterpolators } from '@react-navigation/stack';
 import firebase from 'firebase';
-
 import { LogBox } from 'react-native';
+
 import MemoDeatilScreen from './src/screens/MemoDetailScreen';
 import MemoListScreen from './src/screens/MemoListScreen';
 import MemoEditScreen from './src/screens/MemoEditScreen';
@@ -13,7 +13,7 @@ import SignUpScreen from './src/screens/SignUpScreen';
 import { firebaseConfig } from './env';
 
 // Ignore log notification by message
-LogBox.ignoreLogs(['AsyncStorage has been extracted']);
+LogBox.ignoreLogs(['AsyncStorage has been extracted', 'Setting a timer']);
 
 require('firebase/firestore');
 
